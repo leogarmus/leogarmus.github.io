@@ -18,6 +18,7 @@
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -27,14 +28,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7">
-					<img class="header-img" src="img/Imac.png" alt="Imac">
+					<img class="header-img wow fadeInLeftBig" src="img/Imac.png" alt="Imac">
 				</div>
 				<div class="col-lg-5">
-					<p class="header-pretitle">Веб-разработчик</p>
-					<h1 class="header-title">Алексеев Кирилл</h1>
-					<p class="header-subtitle">Верстка на HTML/CSS<br>
+					<p class="header-pretitle wow fadeInRightBig" data-wow-delay="0.1s">Веб-разработчик</p>
+					<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Алексеев Кирилл</h1>
+					<p class="header-subtitle wow fadeInRightBig" data-wow-delay="0.3s">Верстка на HTML/CSS<br>
 						Разработка сайтов под ключ</p>
-					<div class="header-button-block">
+					<div class="header-button-block wow fadeInRightBig" data-wow-delay="0.4s">
 						<a href="https://www.facebook.com/leo.gasmus.7" class="header-button" target="_blank">Связаться</a>
 						<small>*Это бесплатно</small>
 					</div>
@@ -49,7 +50,7 @@
 				<p class="portfolio-subtitle">Мои работы</p>
 				<div class="row">
 					<div class="col-md-6">
-						<div class="portfolio-col-1">
+						<div class="portfolio-col-1 wow fadeInUpBig">
 							<img  src="img/Gaz.jpg" alt="gazprom">
 							<h3>внутренний университет «Газпром нефти»</h3>
 							<p class="portfolio-text">У «Газпром нефти» есть внутренний Корпоративный университет для сотрудников. Это настоящий университет, где сотрудники проходят обучение у внутренних тренеров компании или у специально приглашенных лекторов и экспертов....</p>
@@ -58,7 +59,7 @@
 					</div>
 					<!-- /.col-6 -->
 					<div class="col-md-6">
-						<div class="portfolio-col-2">
+						<div class="portfolio-col-2 wow fadeInUpBig">
 							<img src="img/mir.jpg" alt="mir">
 							<h3>Сайт платежной системы «Мир»</h3>
 							<p class="portfolio-text">Обновленная версия сайта знакомит посетителей с компаниями, уже принимающими карты к оплате, и приглашает всех остальных присоединиться к проекту...</p>
@@ -83,10 +84,10 @@
 				<div class="col-md-4">
 					<div class="social-block">
 						<p>Подпишитесь:</p>
-						<a href="https://www.facebook.com/leo.gasmus.7"><img src="img/icon/facebook-logo.png" alt="facebook"></a>
-						<a href="https://t.me/leogasmus"><img src="img/icon/telegram-logo.png" alt="telegra"></a>
-						<a href="https://vk.com/leogasmus"><img src="img/icon/vk-social-logo.png" alt="VK"></a>
-						<a href="https://www.youtube.com/channel/UCLQYnnqFxuQ86qqhXODhMYw"><img src="img/icon/youtube-logo.png" alt="youtube"></a>
+						<a href="https://www.facebook.com/leo.gasmus.7"><img src="img/icon/facebook-logo.png" class="wow wobble" data-wow-delay="0.1s"  alt="facebook"></a>
+						<a href="https://t.me/leogasmus"><img src="img/icon/telegram-logo.png" class="wow wobble" data-wow-delay="0.2s" alt="telegra"></a>
+						<a href="https://vk.com/leogasmus"><img src="img/icon/vk-social-logo.png" class="wow wobble" data-wow-delay="0.3s" alt="VK"></a>
+						<a href="https://www.youtube.com/channel/UCLQYnnqFxuQ86qqhXODhMYw"><img src="img/icon/youtube-logo.png" class="wow wobble" data-wow-delay="0.4s" alt="youtube"></a>
 					</div>
 				</div>
 				<!-- /.col-4 -->
@@ -101,5 +102,10 @@
 			<!-- /.row -->
 		</div>
 	</footer>
+
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </body>
 </html>
